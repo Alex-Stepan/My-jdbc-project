@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a091a933-597f-42d5-b683-ca2a78767f1f" name="Changes" comment="Initial commit" />
+    <list default="true" id="a091a933-597f-42d5-b683-ca2a78767f1f" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Queries/day02/Day2_orderBy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Queries/day02/Day2_orderBy.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +56,7 @@
       <workItem from="1658245075440" duration="3144000" />
       <workItem from="1658272273113" duration="23955000" />
       <workItem from="1659359022235" duration="5271000" />
-      <workItem from="1661180097333" duration="11586000" />
+      <workItem from="1661180097333" duration="26223000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1661795079560</created>
@@ -69,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661795197024</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1661795403115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661795403115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
