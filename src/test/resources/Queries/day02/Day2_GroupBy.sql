@@ -27,3 +27,24 @@ select DEPARTMENT_ID, count(*), sum(SALARY) from EMPLOYEES
     where DEPARTMENT_ID is not null
         group by DEPARTMENT_ID
             order by DEPARTMENT_ID;
+
+-- how many departments we have in each location ?
+select LOCATION_ID, count(*) from DEPARTMENTS
+group by LOCATION_ID;
+
+
+-- how many locations we have in each country ?
+select COUNTRY_ID, count(*) from LOCATIONS
+group by COUNTRY_ID
+order by COUNTRY_ID asc ;
+
+-- how many countries we have in each region ?
+select REGION_ID, count(*) from COUNTRIES
+group by REGION_ID
+order by REGION_ID;
+
+-- how many employees are working for each manager?
+select  MANAGER_ID, count(*) from EMPLOYEES
+    where MANAGER_ID is not null
+        group by MANAGER_ID
+        order by MANAGER_ID asc;
