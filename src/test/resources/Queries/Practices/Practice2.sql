@@ -1,3 +1,72 @@
+select * from EMPLOYEES;
+
+/*
+ ALIASES
+
+ -- Rename Column
+
+ -- Rename Table --> JOINS
+ */
+
+
+ -- Rename Column
+select FIRST_NAME as Given_Name from EMPLOYEES;
+select FIRST_NAME as "Given_Name" from EMPLOYEES;
+
+
+
+
+/*
+ String Functions
+
+-- Concat:
+ in Java: first + "_" + second
+ in sql : first || "_" || second
+
+ */
+
+ -- add "@gmail.com" to the full_name
+ select EMAIL || '@gmail.com' as Full_email from EMPLOYEES;
+select concat(EMAIL, '@gmail.com') as full_email from EMPLOYEES;
+
+
+-- LOWER
+select lower ( concat(EMAIL, '@gmail.com') )   as full_email from EMPLOYEES;
+
+-- UPPER
+select upper ( concat(EMAIL, '@gmail.com') )   as full_email from EMPLOYEES;
+
+
+-- INITCAP
+select EMAIL from EMPLOYEES;
+select initcap(EMAIL) from EMPLOYEES;
+
+
+-- LENGTH
+select length(EMAIL) from EMPLOYEES;
+
+
+select distinct length(EMAIL) from EMPLOYEES
+order by length(EMAIL)desc ;
+
+select  FIRST_NAME, length(FIRST_NAME) as length_firstname from EMPLOYEES
+order by length_firstname;
+
+
+/*
+ SUBSTR( column name, beginIndex, number of chars)
+ */
+
+ -- Display all initials from employees : Steven King to S.K.
+ select substr(FIRST_NAME, 0 , 1) || '.' || substr(LAST_NAME, 0, 1) || '.' from EMPLOYEES;
+
+select substr(FIRST_NAME, 1 , 2) || '.' || substr(LAST_NAME, 1, 2) || '.' from EMPLOYEES;
+
+
+select FIRST_NAME, salary from EMPLOYEES
+where SALARY > 3000
+order by substr( FIRST_NAME, 3 );
+
 
 -- 1. display full addresses from locations table in a single column
 
